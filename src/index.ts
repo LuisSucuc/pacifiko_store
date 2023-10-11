@@ -1,17 +1,19 @@
-import express, { Request, Response } from "express";
-import bodyParser from "body-parser";
-import dotenv from "dotenv";
-dotenv.config();
+import express from 'express'
+import bodyParser from 'body-parser'
+import dotenv from 'dotenv'
+import cors from 'cors'
+import { employee } from './routes/employee'
 
-const app = express();
-app.use(bodyParser.json());
+dotenv.config()
+const app = express()
+app.use(cors())
+app.use(bodyParser.json())
 
-const PORT = process.env.PORT || 9000;
+const PORT = process.env.PORT || 9000
 
-app.get("/", (req: Request, res: Response) => {
-  res.send({ error: false, message: "Hello World" });
-});
+// Configure routes
+app.use('/api/v1/employee', employee)
 
 app.listen(PORT, () => {
-  console.log(`Listening on port ${PORT}`);
-});
+  console.log(`Listening on port ${PORT}`)
+})
