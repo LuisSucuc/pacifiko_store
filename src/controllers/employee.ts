@@ -1,12 +1,16 @@
+import axios from 'axios'
 import { Request, Response } from 'express'
 import status from 'http-status-codes'
+import { EMPLOYEES_API } from '../constants/apis'
+import { EmployeeResponse } from '../types/employee'
 
-const getAll = (req: Request, res: Response) => {
+const getAll = async (req: Request, res: Response) => {
   try {
-    // Fake service response
-    const serviceResponse = { message: 'Hello World!' }
+    const { data }: { data: EmployeeResponse } = await axios.get(
+      `${EMPLOYEES_API}/employees`
+    )
 
-    res.status(status.OK).send(serviceResponse)
+    res.status(status.OK).send(data.data)
   } catch (error: unknown) {
     // Log error and send response
     console.log(error)
