@@ -7,6 +7,10 @@ import { employeeValidator } from '../validators/employee'
 
 export const employee = express.Router()
 
+/**
+ * @description Get all employees
+ * @returns Employee[] - Array of employees
+ **/
 employee.get(
   '/',
 
@@ -25,6 +29,11 @@ employee.get(
   }
 )
 
+/**
+ * @description Get employee by id
+ * @param id - Employee id
+ * @returns Employee - Employee object
+ */
 employee.get('/:id', async (req: Request, res: Response) => {
   try {
     const validation = employeeValidator.id.validate(req.params)
@@ -47,6 +56,11 @@ employee.get('/:id', async (req: Request, res: Response) => {
   }
 })
 
+/**
+ * @description Create employee
+ * @param employeeData - Employee data
+ * @returns Employee - Employee object
+ */
 employee.post('/create', async (req: Request, res: Response) => {
   try {
     // Send post paramas to validator
@@ -55,9 +69,9 @@ employee.post('/create', async (req: Request, res: Response) => {
     if (validation.error) {
       throw new Error(`Error en validación: ${validation.error}`)
     }
-
+    const employeeData = req.body as Employee
     const controllerResponse: Employee =
-      await employeeController.createEmployee(req.body as Employee)
+      await employeeController.createEmployee(employeeData)
 
     res.status(status.OK).send(controllerResponse)
   } catch (error: unknown) {

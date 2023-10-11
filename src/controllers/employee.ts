@@ -6,6 +6,12 @@ import {
   EmployeesResponse,
 } from '../types/employee'
 
+
+/**
+ * @description Get all employees
+ * @returns Employee[] - Array of employees
+ */
+
 const getAll = async (): Promise<Employee[]> => {
   try {
     const { data }: { data: EmployeesResponse } = await axios.get(
@@ -20,6 +26,11 @@ const getAll = async (): Promise<Employee[]> => {
   }
 }
 
+/**
+ * @description Get employee by id
+ * @param id - Employee id
+ * @returns Employee - Employee object
+ */
 const getEmployeeById = async (id: number): Promise<Employee> => {
   try {
     const { data }: { data: EmployeeResponse } = await axios.get(
@@ -34,6 +45,11 @@ const getEmployeeById = async (id: number): Promise<Employee> => {
   }
 }
 
+/**
+ * @description Create employee
+ * @param employeeData - Employee data
+ * @returns Employee - Employee object
+ */
 const createEmployee = async (employeeData: Employee): Promise<Employee> => {
   console.log(employeeData)
   try {
