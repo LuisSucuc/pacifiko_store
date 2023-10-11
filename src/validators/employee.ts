@@ -1,9 +1,17 @@
 import joi from 'joi'
 
-const idValidator = joi.object({
+const id = joi.object({
   id: joi.number().required(),
 })
 
+const employee = joi.object({
+  employee_name: joi.string().required(),
+  employee_salary: joi.number().min(1).required(),
+  employee_age: joi.number().min(1).required(),
+  profile_image: joi.string().required(),
+})
+
 export const employeeValidator = {
-  idValidator,
+  id,
+  employee,
 }

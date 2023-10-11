@@ -34,7 +34,26 @@ const getEmployeeById = async (id: number): Promise<Employee> => {
   }
 }
 
+const createEmployee = async (employeeData: Employee): Promise<Employee> => {
+  console.log(employeeData)
+  try {
+    const { data }: { data: EmployeeResponse } = await axios.post(
+      `${EMPLOYEES_API}/create`,
+      employeeData,
+    )
+
+    console.log(data)
+
+    return data.data
+  } catch (error: unknown) {
+    // Log error and send response
+    console.log(error)
+    throw new Error((error as Error).message)
+  }
+}
+
 export const employeeController = {
   getAll,
   getEmployeeById,
+  createEmployee,
 }
