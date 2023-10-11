@@ -8,7 +8,14 @@ export type Employee = {
   profile_image: string
 }
 
-export type EmployeeResponse = {
+export type EmployeesResponse = {
   status: string
   data: Employee[]
+}
+
+
+
+export type EmployeeResponse = {
+  status: string
+  data: Employee
 }
