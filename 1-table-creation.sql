@@ -1,16 +1,5 @@
 --- TASK 1: TABLE CREATION
 
--- Eliminar la tabla "order_item" y todas sus dependencias en cascada
-DROP TABLE IF EXISTS order_item CASCADE;
-
--- Eliminar la tabla "orders" y todas sus dependencias en cascada
-DROP TABLE IF EXISTS orders CASCADE;
-
--- Eliminar la tabla "customer" y todas sus dependencias en cascada
-DROP TABLE IF EXISTS customer CASCADE;
-
--- Eliminar la tabla "product" y todas sus dependencias en cascada
-DROP TABLE IF EXISTS product CASCADE;
 
 CREATE TABLE IF NOT EXISTS public.product (
     product_id SERIAL PRIMARY KEY,
