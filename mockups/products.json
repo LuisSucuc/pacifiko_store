@@ -1,0 +1,22 @@
+[
+  { "product_id": 1, "product_name": "Smartphone", "price": 600 },
+  { "product_id": 2, "product_name": "Laptop", "price": 1000 },
+  { "product_id": 3, "product_name": "Tablet", "price": 350 },
+  { "product_id": 4, "product_name": "Smartwatch", "price": 200 },
+  { "product_id": 5, "product_name": "Headphones", "price": 80 },
+  { "product_id": 6, "product_name": "Gaming Console", "price": 500 },
+  { "product_id": 7, "product_name": "Wireless Router", "price": 70 },
+  { "product_id": 8, "product_name": "Virtual Reality Headset", "price": 300 },
+  { "product_id": 9, "product_name": "Smart Speaker", "price": 150 },
+  { "product_id": 10, "product_name": "Digital Camera", "price": 450 },
+  { "product_id": 11, "product_name": "Smart TV", "price": 700 },
+  { "product_id": 12, "product_name": "Bluetooth Speaker", "price": 60 },
+  { "product_id": 13, "product_name": "Fitness Tracker", "price": 90 },
+  { "product_id": 14, "product_name": "Coffee Maker", "price": 120 },
+  { "product_id": 15, "product_name": "Drone", "price": 250 },
+  { "product_id": 16, "product_name": "External Hard Drive", "price": 80 },
+  { "product_id": 17, "product_name": "Printer", "price": 150 },
+  { "product_id": 18, "product_name": "Smart Lock", "price": 120 },
+  { "product_id": 19, "product_name": "Security Camera", "price": 180 },
+  { "product_id": 20, "product_name": "Microwave", "price": 100 }
+]
