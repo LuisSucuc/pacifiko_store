@@ -43,7 +43,7 @@ CREATE TABLE IF NOT EXISTS order_item (
 
 -- Inserts para la tabla 'product'
 INSERT INTO
-    public.product (product_name, price, stock_quantity)
+    product (product_name, price, stock_quantity)
 VALUES
     ('Laptop HP Pavilion', 799.99, 25),
     ('Monitor Dell UltraSharp', 249.99, 30),
