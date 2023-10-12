@@ -1,0 +1,664 @@
+{
+	"info": {
+		"_postman_id": "3e8b62d6-5a6f-442f-a74c-9757b5a09387",
+		"name": "Luis Sucuc - Pacifiko",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29726010",
+		"_collection_link": "https://www.postman.com/supply-operator-70856562/workspace/pacifiko-workspace/collection/29726010-3e8b62d6-5a6f-442f-a74c-9757b5a09387?action=share&source=collection_link&creator=29726010"
+	},
+	"item": [
+		{
+			"name": "Get Employee",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://pacifiko-shpr2.ondigitalocean.app/api/v1/employee/1",
+					"protocol": "https",
+					"host": [
+						"pacifiko-shpr2",
+						"ondigitalocean",
+						"app"
+					],
+					"path": [
+						"api",
+						"v1",
+						"employee",
+						"1"
+					]
+				},
+				"description": "Get specific employee"
+			},
+			"response": [
+				{
+					"name": "Get Employee",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://pacifiko-shpr2.ondigitalocean.app/api/v1/employee/1",
+							"protocol": "https",
+							"host": [
+								"pacifiko-shpr2",
+								"ondigitalocean",
+								"app"
+							],
+							"path": [
+								"api",
+								"v1",
+								"employee",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 12 Oct 2023 01:09:54 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "*"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"64-q1F1twAsyzrfsro3dUpU4yCC20Y\""
+						},
+						{
+							"key": "x-do-app-origin",
+							"value": "42ff9f10-6917-4a39-b926-4cc85b2a7d24"
+						},
+						{
+							"key": "cache-control",
+							"value": "private"
+						},
+						{
+							"key": "x-do-orig-status",
+							"value": "200"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "MISS"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "__cf_bm=mJxwiBST9wdgg5mlaNlREV2oWEDrHTHjJau5ca3Xgjs-1697072994-0-AelWkHJfhi1IQ08asO7WrpDPLdpfDhRp5sro8lOAnXD6CgVZGeXgjAFN8oWMLo1WCqQyEyazPLJz9WFcMa2XWaQ=; path=/; expires=Thu, 12-Oct-23 01:39:54 GMT; domain=.ondigitalocean.app; HttpOnly; Secure; SameSite=None"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "814b75c52e9967c2-MIA"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"employee_name\": \"Tiger Nixon\",\n    \"employee_salary\": 320800,\n    \"employee_age\": 61,\n    \"profile_image\": \"\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Employees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://pacifiko-shpr2.ondigitalocean.app/api/v1/employee",
+					"protocol": "https",
+					"host": [
+						"pacifiko-shpr2",
+						"ondigitalocean",
+						"app"
+					],
+					"path": [
+						"api",
+						"v1",
+						"employee"
+					]
+				},
+				"description": "Get all employees"
+			},
+			"response": [
+				{
+					"name": "Get Employees",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://pacifiko-shpr2.ondigitalocean.app/api/v1/employee",
+							"protocol": "https",
+							"host": [
+								"pacifiko-shpr2",
+								"ondigitalocean",
+								"app"
+							],
+							"path": [
+								"api",
+								"v1",
+								"employee"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 12 Oct 2023 01:13:16 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "*"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"9ad-bu2Wf1TekyFCMx4qYr4QxGLtQP4\""
+						},
+						{
+							"key": "x-do-app-origin",
+							"value": "42ff9f10-6917-4a39-b926-4cc85b2a7d24"
+						},
+						{
+							"key": "cache-control",
+							"value": "private"
+						},
+						{
+							"key": "x-do-orig-status",
+							"value": "200"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "MISS"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "__cf_bm=HEG_r7cox0t4sf13k3_VxAieaO.GnMaRn4IHgLtZAzY-1697073196-0-AQMppo6XmbIn6+zHg9fTP4fmxH7kNwwKR0gmi2BRWhKPaHnmjGr6C03aI1bpADx0p7YIkpnWdqpNx5V4NsFqXCk=; path=/; expires=Thu, 12-Oct-23 01:43:16 GMT; domain=.ondigitalocean.app; HttpOnly; Secure; SameSite=None"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "814b7ab0fd3167c2-MIA"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"employee_name\": \"Tiger Nixon\",\n        \"employee_salary\": 320800,\n        \"employee_age\": 61,\n        \"profile_image\": \"\"\n    },\n    {\n        \"id\": 2,\n        \"employee_name\": \"Garrett Winters\",\n        \"employee_salary\": 170750,\n        \"employee_age\": 63,\n        \"profile_image\": \"\"\n    },\n    {\n        \"id\": 3,\n        \"employee_name\": \"Ashton Cox\",\n        \"employee_salary\": 86000,\n        \"employee_age\": 66,\n        \"profile_image\": \"\"\n    },\n    {\n        \"id\": 4,\n        \"employee_name\": \"Cedric Kelly\",\n        \"employee_salary\": 433060,\n        \"employee_age\": 22,\n        \"profile_image\": \"\"\n    },\n    {\n        \"id\": 5,\n        \"employee_name\": \"Airi Satou\",\n        \"employee_salary\": 162700,\n        \"employee_age\": 33,\n        \"profile_image\": \"\"\n    },\n    {\n        \"id\": 6,\n        \"employee_name\": \"Brielle Williamson\",\n        \"employee_salary\": 372000,\n        \"employee_age\": 61,\n        \"profile_image\": \"\"\n    },\n    {\n        \"id\": 7,\n        \"employee_name\": \"Herrod Chandler\",\n        \"employee_salary\": 137500,\n        \"employee_age\": 59,\n        \"profile_image\": \"\"\n    },\n    {\n        \"id\": 8,\n        \"employee_name\": \"Rhona Davidson\",\n        \"employee_salary\": 327900,\n        \"employee_age\": 55,\n        \"profile_image\": \"\"\n    },\n    {\n        \"id\": 9,\n        \"employee_name\": \"Colleen Hurst\",\n        \"employee_salary\": 205500,\n        \"employee_age\": 39,\n        \"profile_image\": \"\"\n    },\n    {\n        \"id\": 10,\n        \"employee_name\": \"Sonya Frost\",\n        \"employee_salary\": 103600,\n        \"employee_age\": 23,\n        \"profile_image\": \"\"\n    },\n    {\n        \"id\": 11,\n        \"employee_name\": \"Jena Gaines\",\n        \"employee_salary\": 90560,\n        \"employee_age\": 30,\n        \"profile_image\": \"\"\n    },\n    {\n        \"id\": 12,\n        \"employee_name\": \"Quinn Flynn\",\n        \"employee_salary\": 342000,\n        \"employee_age\": 22,\n        \"profile_image\": \"\"\n    },\n    {\n        \"id\": 13,\n        \"employee_name\": \"Charde Marshall\",\n        \"employee_salary\": 470600,\n        \"employee_age\": 36,\n        \"profile_image\": \"\"\n    },\n    {\n        \"id\": 14,\n        \"employee_name\": \"Haley Kennedy\",\n        \"employee_salary\": 313500,\n        \"employee_age\": 43,\n        \"profile_image\": \"\"\n    },\n    {\n        \"id\": 15,\n        \"employee_name\": \"Tatyana Fitzpatrick\",\n        \"employee_salary\": 385750,\n        \"employee_age\": 19,\n        \"profile_image\": \"\"\n    },\n    {\n        \"id\": 16,\n        \"employee_name\": \"Michael Silva\",\n        \"employee_salary\": 198500,\n        \"employee_age\": 66,\n        \"profile_image\": \"\"\n    },\n    {\n        \"id\": 17,\n        \"employee_name\": \"Paul Byrd\",\n        \"employee_salary\": 725000,\n        \"employee_age\": 64,\n        \"profile_image\": \"\"\n    },\n    {\n        \"id\": 18,\n        \"employee_name\": \"Gloria Little\",\n        \"employee_salary\": 237500,\n        \"employee_age\": 59,\n        \"profile_image\": \"\"\n    },\n    {\n        \"id\": 19,\n        \"employee_name\": \"Bradley Greer\",\n        \"employee_salary\": 132000,\n        \"employee_age\": 41,\n        \"profile_image\": \"\"\n    },\n    {\n        \"id\": 20,\n        \"employee_name\": \"Dai Rios\",\n        \"employee_salary\": 217500,\n        \"employee_age\": 35,\n        \"profile_image\": \"\"\n    },\n    {\n        \"id\": 21,\n        \"employee_name\": \"Jenette Caldwell\",\n        \"employee_salary\": 345000,\n        \"employee_age\": 30,\n        \"profile_image\": \"\"\n    },\n    {\n        \"id\": 22,\n        \"employee_name\": \"Yuri Berry\",\n        \"employee_salary\": 675000,\n        \"employee_age\": 40,\n        \"profile_image\": \"\"\n    },\n    {\n        \"id\": 23,\n        \"employee_name\": \"Caesar Vance\",\n        \"employee_salary\": 106450,\n        \"employee_age\": 21,\n        \"profile_image\": \"\"\n    },\n    {\n        \"id\": 24,\n        \"employee_name\": \"Doris Wilder\",\n        \"employee_salary\": 85600,\n        \"employee_age\": 23,\n        \"profile_image\": \"\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Create Employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"employee_name\": \"Luis Sucuc\",\n    \"employee_salary\": 300000,\n    \"employee_age\": 30,\n    \"profile_image\": \"https://avatars.githubusercontent.com/u/24199028?v=4\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://pacifiko-shpr2.ondigitalocean.app/api/v1/employee/create",
+					"protocol": "https",
+					"host": [
+						"pacifiko-shpr2",
+						"ondigitalocean",
+						"app"
+					],
+					"path": [
+						"api",
+						"v1",
+						"employee",
+						"create"
+					]
+				},
+				"description": "Create new employee"
+			},
+			"response": [
+				{
+					"name": "Create Employee",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"employee_name\": \"Luis Sucuc\",\n    \"employee_salary\": 300000,\n    \"employee_age\": 30,\n    \"profile_image\": \"https://avatars.githubusercontent.com/u/24199028?v=4\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://pacifiko-shpr2.ondigitalocean.app/api/v1/employee/create",
+							"protocol": "https",
+							"host": [
+								"pacifiko-shpr2",
+								"ondigitalocean",
+								"app"
+							],
+							"path": [
+								"api",
+								"v1",
+								"employee",
+								"create"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 12 Oct 2023 01:20:39 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "*"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"9a-fO4mRgKAR9RsJLknkDp06hGFXIg\""
+						},
+						{
+							"key": "x-do-app-origin",
+							"value": "42ff9f10-6917-4a39-b926-4cc85b2a7d24"
+						},
+						{
+							"key": "cache-control",
+							"value": "private"
+						},
+						{
+							"key": "x-do-orig-status",
+							"value": "200"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "__cf_bm=R0qDt5Evbceksbr3RZ7CNDuy9N6Y7R5n2hjgr9bAq9M-1697073639-0-AcNMt+Fg+FhUcPc6DZIms7Fputmr3hVcM8c/xjaF+BXeJqdZrUlNnqRu586ZqnNfOL9oz+bMqvu619UdK3UyTCc=; path=/; expires=Thu, 12-Oct-23 01:50:39 GMT; domain=.ondigitalocean.app; HttpOnly; Secure; SameSite=None"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "814b85815eb33dcc-MIA"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"employee_name\": \"Luis Sucuc\",\n    \"employee_salary\": 300000,\n    \"employee_age\": 30,\n    \"profile_image\": \"https://avatars.githubusercontent.com/u/24199028?v=4\",\n    \"id\": 5334\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Salary Employees",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/api/v1/employee/salary/?salary=300000&type=greater",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"v1",
+						"employee",
+						"salary",
+						""
+					],
+					"query": [
+						{
+							"key": "salary",
+							"value": "300000"
+						},
+						{
+							"key": "type",
+							"value": "greater"
+						}
+					]
+				},
+				"description": "Filter employees by salary"
+			},
+			"response": [
+				{
+					"name": "Greater than",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/v1/employee/salary/?salary=87000&type=greater",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"v1",
+								"employee",
+								"salary",
+								""
+							],
+							"query": [
+								{
+									"key": "salary",
+									"value": "87000"
+								},
+								{
+									"key": "type",
+									"value": "greater"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2301"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"8fd-k3ARnzHm6WYxxqkUKgjgy9uhFbM\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 11 Oct 2023 23:51:47 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"total\": 22,\n    \"employees\": [\n        {\n            \"id\": 1,\n            \"employee_name\": \"Tiger Nixon\",\n            \"employee_salary\": 320800,\n            \"employee_age\": 61,\n            \"profile_image\": \"\"\n        },\n        {\n            \"id\": 2,\n            \"employee_name\": \"Garrett Winters\",\n            \"employee_salary\": 170750,\n            \"employee_age\": 63,\n            \"profile_image\": \"\"\n        },\n        {\n            \"id\": 4,\n            \"employee_name\": \"Cedric Kelly\",\n            \"employee_salary\": 433060,\n            \"employee_age\": 22,\n            \"profile_image\": \"\"\n        },\n        {\n            \"id\": 5,\n            \"employee_name\": \"Airi Satou\",\n            \"employee_salary\": 162700,\n            \"employee_age\": 33,\n            \"profile_image\": \"\"\n        },\n        {\n            \"id\": 6,\n            \"employee_name\": \"Brielle Williamson\",\n            \"employee_salary\": 372000,\n            \"employee_age\": 61,\n            \"profile_image\": \"\"\n        },\n        {\n            \"id\": 7,\n            \"employee_name\": \"Herrod Chandler\",\n            \"employee_salary\": 137500,\n            \"employee_age\": 59,\n            \"profile_image\": \"\"\n        },\n        {\n            \"id\": 8,\n            \"employee_name\": \"Rhona Davidson\",\n            \"employee_salary\": 327900,\n            \"employee_age\": 55,\n            \"profile_image\": \"\"\n        },\n        {\n            \"id\": 9,\n            \"employee_name\": \"Colleen Hurst\",\n            \"employee_salary\": 205500,\n            \"employee_age\": 39,\n            \"profile_image\": \"\"\n        },\n        {\n            \"id\": 10,\n            \"employee_name\": \"Sonya Frost\",\n            \"employee_salary\": 103600,\n            \"employee_age\": 23,\n            \"profile_image\": \"\"\n        },\n        {\n            \"id\": 11,\n            \"employee_name\": \"Jena Gaines\",\n            \"employee_salary\": 90560,\n            \"employee_age\": 30,\n            \"profile_image\": \"\"\n        },\n        {\n            \"id\": 12,\n            \"employee_name\": \"Quinn Flynn\",\n            \"employee_salary\": 342000,\n            \"employee_age\": 22,\n            \"profile_image\": \"\"\n        },\n        {\n            \"id\": 13,\n            \"employee_name\": \"Charde Marshall\",\n            \"employee_salary\": 470600,\n            \"employee_age\": 36,\n            \"profile_image\": \"\"\n        },\n        {\n            \"id\": 14,\n            \"employee_name\": \"Haley Kennedy\",\n            \"employee_salary\": 313500,\n            \"employee_age\": 43,\n            \"profile_image\": \"\"\n        },\n        {\n            \"id\": 15,\n            \"employee_name\": \"Tatyana Fitzpatrick\",\n            \"employee_salary\": 385750,\n            \"employee_age\": 19,\n            \"profile_image\": \"\"\n        },\n        {\n            \"id\": 16,\n            \"employee_name\": \"Michael Silva\",\n            \"employee_salary\": 198500,\n            \"employee_age\": 66,\n            \"profile_image\": \"\"\n        },\n        {\n            \"id\": 17,\n            \"employee_name\": \"Paul Byrd\",\n            \"employee_salary\": 725000,\n            \"employee_age\": 64,\n            \"profile_image\": \"\"\n        },\n        {\n            \"id\": 18,\n            \"employee_name\": \"Gloria Little\",\n            \"employee_salary\": 237500,\n            \"employee_age\": 59,\n            \"profile_image\": \"\"\n        },\n        {\n            \"id\": 19,\n            \"employee_name\": \"Bradley Greer\",\n            \"employee_salary\": 132000,\n            \"employee_age\": 41,\n            \"profile_image\": \"\"\n        },\n        {\n            \"id\": 20,\n            \"employee_name\": \"Dai Rios\",\n            \"employee_salary\": 217500,\n            \"employee_age\": 35,\n            \"profile_image\": \"\"\n        },\n        {\n            \"id\": 21,\n            \"employee_name\": \"Jenette Caldwell\",\n            \"employee_salary\": 345000,\n            \"employee_age\": 30,\n            \"profile_image\": \"\"\n        },\n        {\n            \"id\": 22,\n            \"employee_name\": \"Yuri Berry\",\n            \"employee_salary\": 675000,\n            \"employee_age\": 40,\n            \"profile_image\": \"\"\n        },\n        {\n            \"id\": 23,\n            \"employee_name\": \"Caesar Vance\",\n            \"employee_salary\": 106450,\n            \"employee_age\": 21,\n            \"profile_image\": \"\"\n        }\n    ]\n}"
+				},
+				{
+					"name": "Less than",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/v1/employee/salary/?salary=87000&type=less",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"v1",
+								"employee",
+								"salary",
+								""
+							],
+							"query": [
+								{
+									"key": "salary",
+									"value": "87000"
+								},
+								{
+									"key": "type",
+									"value": "less"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "226"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"e2-Ir7ebDMhuFY83w/UjVBqax6og0Q\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 11 Oct 2023 23:25:08 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"total\": 2,\n    \"employees\": [\n        {\n            \"id\": 3,\n            \"employee_name\": \"Ashton Cox\",\n            \"employee_salary\": 86000,\n            \"employee_age\": 66,\n            \"profile_image\": \"\"\n        },\n        {\n            \"id\": 24,\n            \"employee_name\": \"Doris Wilder\",\n            \"employee_salary\": 85600,\n            \"employee_age\": 23,\n            \"profile_image\": \"\"\n        }\n    ]\n}"
+				},
+				{
+					"name": "Equal",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/v1/employee/salary/?salary=103600&type=equal",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"v1",
+								"employee",
+								"salary",
+								""
+							],
+							"query": [
+								{
+									"key": "salary",
+									"value": "103600"
+								},
+								{
+									"key": "type",
+									"value": "equal"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "127"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"7f-8wae2s+OvOvYwQ3gl1q0O5ftCWE\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 12 Oct 2023 00:22:44 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"total\": 1,\n    \"employees\": [\n        {\n            \"id\": 10,\n            \"employee_name\": \"Sonya Frost\",\n            \"employee_salary\": 103600,\n            \"employee_age\": 23,\n            \"profile_image\": \"\"\n        }\n    ]\n}"
+				}
+			]
+		}
+	]
+}
