@@ -2,6 +2,9 @@
 is represented by a dictionary with 'product_id', 'product_name', and 'price'''
 
 
+import mockups
+
+
 def search_product(products, name):
     '''
     This function searches for a product by name in a list of products.
@@ -20,7 +23,6 @@ def search_product(products, name):
     return None
 
 
-import mockups
 # Search for a product by name: 'Smartphone'
 product_found = search_product(mockups.products, 'Smartphone')
 
