@@ -20,12 +20,9 @@ def search_product(products, name):
     return None
 
 
-# Use example
-import utils
-# Import the products from the JSON file
-products = utils.open_json_file('products.json')
+import mockups
 # Search for a product by name: 'Smartphone'
-product_found = search_product(products, 'Smartphone')
+product_found = search_product(mockups.products, 'Smartphone')
 
 if product_found is None:
     print("Product not found")
