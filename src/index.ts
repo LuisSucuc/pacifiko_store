@@ -3,6 +3,7 @@ import bodyParser from 'body-parser'
 import dotenv from 'dotenv'
 import cors from 'cors'
 import { employee } from './routes/employee'
+import { root } from './types/root'
 
 dotenv.config()
 const app = express()
@@ -12,6 +13,7 @@ app.use(bodyParser.json())
 const PORT = process.env.PORT || 9000
 
 // Configure routes
+app.use('/', root)
 app.use('/api/v1/employee', employee)
 
 app.listen(PORT, () => {
