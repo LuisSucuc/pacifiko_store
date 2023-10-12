@@ -2,7 +2,7 @@
 
 - A project was created in Node Js, using Typescript, ES6 and Express as main technologies.
 - The project was hosted in the Digital Ocean cloud through the Apps service, which is integrated with GitHub and allows public access to the project at the url https://pacifiko-shpr2.ondigitalocean.app
-- A Postman collection was created to test the created endpoints, each request contains a usage example. The collection can be acces here: [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/29726010-3e8b62d6-5a6f-442f-a74c-9757b5a09387?action=collection%2Ffork&source=rip_markdown&collection-url=entityId%3D29726010-3e8b62d6-5a6f-442f-a74c-9757b5a09387%26entityType%3Dcollection%26workspaceId%3D509e8109-a7a5-4d79-92fc-18e96eeeeeab) or download this file and import on Postman.
+- A Postman collection was created to test the created endpoints, each request contains a usage example. The collection can be acces here: [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/29726010-3e8b62d6-5a6f-442f-a74c-9757b5a09387?action=collection%2Ffork&source=rip_markdown&collection-url=entityId%3D29726010-3e8b62d6-5a6f-442f-a74c-9757b5a09387%26entityType%3Dcollection%26workspaceId%3D509e8109-a7a5-4d79-92fc-18e96eeeeeab) or [download this file and import on Postman](https://github.com/LuisSucuc/pacifiko_store/blob/feature/api-integration/LuisSucucPacifiko.postman_collection.json)
 
 - Please note that if the services give error 429, it is because the Dummy API does not allow many consecutive requests, please wait 1 minute to try again.
 
