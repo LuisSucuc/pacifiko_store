@@ -13,3 +13,16 @@ def open_json_file(file_path):
     with open(f'mockups/{file_path}', 'r') as file:
         data = json.load(file)
     return data
+
+def format_price(price):
+    '''
+    This function formats a price to be displayed as USD.
+
+    Args:
+        price (float): The price to be formatted.
+
+    Returns:
+        str: The formatted price.
+    '''
+
+    return "${:,.2f}".format(price)
