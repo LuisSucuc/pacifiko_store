@@ -72,7 +72,7 @@ const createEmployee = async (employeeData: Employee): Promise<Employee> => {
  * @param type - Type of search
  * @returns Employee - Employee object
  */
-const searchSalary = async (
+const getEmployeesBySalary = async (
   salary: number,
   type: string
 ): Promise<EmployeesBySalary> => {
@@ -80,7 +80,6 @@ const searchSalary = async (
     const { data }: { data: EmployeesResponse } = await axios.get(
       `${EMPLOYEES_API}/employees`
     )
-    
     let employees: Employee[] = []
     // Filter all employees with salary greater than the given one if type is == 'greater'
     if (type === 'greater') {
@@ -116,5 +115,5 @@ export const employeeController = {
   getAll,
   getEmployeeById,
   createEmployee,
-  getEmployeesBySalary: searchSalary,
+  getEmployeesBySalary,
 }

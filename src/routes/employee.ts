@@ -71,7 +71,7 @@ employee.get('/salary', async (req: Request, res: Response) => {
 
     const controllerResponse: EmployeesBySalary =
       await employeeController.getEmployeesBySalary(
-        req.query.salary as unknown as number,
+        Number(req.query.salary) as unknown as number,
         req.query.type as unknown as string
       )
 
