@@ -1,0 +1,12 @@
+[
+  { "product_id": 1, "quantity": 1, "price": 400, "discount_percentage": 10 },
+  { "product_id": 2, "quantity": 3, "price": 100, "discount_percentage": 50 },
+  { "product_id": 3, "quantity": 2, "price": 250, "discount_percentage": 25 },
+  { "product_id": 4, "quantity": 1, "price": 150, "discount_percentage": 0 },
+  { "product_id": 5, "quantity": 4, "price": 75, "discount_percentage": 10 },
+  { "product_id": 6, "quantity": 2, "price": 300, "discount_percentage": 15 },
+  { "product_id": 7, "quantity": 1, "price": 200, "discount_percentage": 5 },
+  { "product_id": 8, "quantity": 3, "price": 50, "discount_percentage": 20 },
+  { "product_id": 9, "quantity": 2, "price": 350, "discount_percentage": 30 },
+  { "product_id": 10, "quantity": 1, "price": 100, "discount_percentage": 0 }
+]
