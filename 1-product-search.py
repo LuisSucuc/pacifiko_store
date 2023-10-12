@@ -21,22 +21,12 @@ def search_product(products, name):
 
 
 # Use example
-
-products = [
-    {'product_id': 1, 'product_name': 'Smartphone', 'price': 600},
-    {'product_id': 2, 'product_name': 'Laptop', 'price': 1000},
-    {'product_id': 3, 'product_name': 'Tablet', 'price': 350},
-    {'product_id': 4, 'product_name': 'Smartwatch', 'price': 200},
-    {'product_id': 5, 'product_name': 'Headphones', 'price': 80},
-    {'product_id': 6, 'product_name': 'Gaming Console', 'price': 500},
-    {'product_id': 7, 'product_name': 'Wireless Router', 'price': 70},
-    {'product_id': 8, 'product_name': 'Virtual Reality Headset', 'price': 300},
-    {'product_id': 9, 'product_name': 'Smart Speaker', 'price': 150},
-    {'product_id': 10, 'product_name': 'Digital Camera', 'price': 450}
-]
-
-
+import utils
+# Import the products from the JSON file
+products = utils.open_json_file('products.json')
+# Search for a product by name: 'Smartphone'
 product_found = search_product(products, 'Smartphone')
+
 if product_found is None:
     print("Product not found")
 else:
