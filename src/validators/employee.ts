@@ -11,7 +11,13 @@ const employee = joi.object({
   profile_image: joi.string().required(),
 })
 
+const salary = joi.object({
+  salary: joi.number().min(1).required(),
+  type: joi.string().required(),
+})
+
 export const employeeValidator = {
   id,
   employee,
+  salary,
 }
